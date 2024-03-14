@@ -1,0 +1,36 @@
+.about-us {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 20px;
+  text-align: center; /* Align text in the center */
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+  ul li {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+  }
