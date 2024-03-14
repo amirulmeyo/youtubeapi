@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Video Suggestions</h1>
+  <div class="video-cards">
+    <div *ngFor="let video of videoSuggestions" class="video-card">
+      <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId">
+        <img [src]="video.snippet.thumbnails.default.url" alt="{{ video.snippet.title }}" class="thumbnail">
+        <h2>{{ video.snippet.title }}</h2>
+      </a>
+    </div>
+  </div>
+</div>
