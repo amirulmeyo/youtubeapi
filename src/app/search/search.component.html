@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Search Videos</h1>
+  <div class="search-box">
+    <input type="text" placeholder="Search for videos..." [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()">
+    <button class="search-button" (click)="searchVideos()">Search</button>
+  </div>
+  <div class="video-cards">
+    <div *ngFor="let video of searchResults" class="video-card">
+      <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId">
+        <img [src]="video.snippet.thumbnails.default.url" alt="{{ video.snippet.title }}" class="thumbnail">
+        <h2>{{ video.snippet.title }}</h2>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
